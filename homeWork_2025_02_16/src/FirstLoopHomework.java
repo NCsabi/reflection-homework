@@ -6,18 +6,17 @@ public class FirstLoopHomework {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter a number upper than 0: ");
+        System.out.println("Please enter a number greater than 0: ");
         int number = scanner.nextInt();
         if (number <= 0) {
-            System.err.println("The number is not upper than 0!");
+            System.err.println("The number is not greater than 0!");
         }
         scanner.nextLine();
         System.out.println("Please enter a text: ");
         String text = scanner.nextLine();
 
         for (int i = 0; i < number; i++) {
-            System.out.print(text+" ");
-
+            System.out.print(text + " ");
         }
         scanner.close();
 
