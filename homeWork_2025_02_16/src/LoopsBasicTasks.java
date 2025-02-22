@@ -80,7 +80,7 @@ public class LoopsBasicTasks {
         }
         System.out.println();
 
-        //Ezen még gondolkodom mert ez nem saját megoldás
+        
         System.out.println("Loop twelve: ");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number: ");
@@ -102,6 +102,6 @@ public class LoopsBasicTasks {
         } else {
             System.out.println("The number is not a prime");
         }
-
+        scanner.close();
     }
 }
