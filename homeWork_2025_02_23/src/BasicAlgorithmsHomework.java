@@ -1,7 +1,7 @@
 public class BasicAlgorithmsHomework {
     public static void main(String[] args) {
         int[] array = {3, 100, 7, 1, -51, 4, 101, 73};
-        System.out.println("Min/max"+"\n");
+        System.out.println("Min/max" + "\n");
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] < min) {
@@ -16,7 +16,7 @@ public class BasicAlgorithmsHomework {
             }
         }
         System.out.println("The biggest element in the array is: " + max + "\n");
-        System.out.println("Counting"+"\n");
+        System.out.println("Counting" + "\n");
         byte counter = 0;
         byte counter2 = 0;
         byte counter3 = 0;
@@ -45,7 +45,7 @@ public class BasicAlgorithmsHomework {
         System.out.println("There are " + counter4 + " elements are not divisible by 3 in the array.");
         System.out.println("The number 73 appears " + counter5 + " in the array.");
         System.out.println();
-        System.out.println("Search"+"\n");
+        System.out.println("Search" + "\n");
         boolean found = false;
         for (int number : array) {
             if (number == 100) {
@@ -58,12 +58,15 @@ public class BasicAlgorithmsHomework {
         } else {
             System.out.println("The value 100 is not found in the array.");
         }
-        System.out.print("The following numbers in the array are greater than 100: ");
+        System.out.print("There is a number greater than 100 in the array: ");
+        boolean hasNumberGreaterThan100 = false;
         for (int number : array) {
             if (number > 100) {
-                System.out.println(number + " ");
+                hasNumberGreaterThan100 = true;
+                break;
             }
         }
+        System.out.println(hasNumberGreaterThan100);
         boolean foundSeven = false;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 7) {
@@ -76,23 +79,23 @@ public class BasicAlgorithmsHomework {
             System.out.println("-1");
         }
         System.out.println();
-        System.out.println("Sum/prod"+"\n");
+        System.out.println("Sum/prod" + "\n");
         int sum = 0;
         long product = 1;
-        for (int numbers : array) {
-            sum += numbers;
-            product *= numbers;
+        for (int number : array) {
+            sum += number;
+            product *= number;
         }
         System.out.println("The sum of the elements in the array is: " + sum);
         System.out.println("The product of the elements in the array is: " + product);
         int strangeSum = 0;
         for (int i = 0; i < array.length; i++) {
-            if ((i+1) % 4 == 0) {
+            if ((i + 1) % 4 == 0) {
                 strangeSum -= array[i];
             } else {
                 strangeSum += array[i];
             }
         }
-        System.out.println("The following sum is: "+strangeSum);
+        System.out.println("The following sum is: " + strangeSum);
     }
 }
