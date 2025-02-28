@@ -27,20 +27,20 @@ public class AlternatingCalculations {
         System.out.println(multAndDivResults);
         System.out.println();
         System.out.println("3. Sum of Even Indexed Numbers Minus Odd Indexed Numbers: ");
-        byte sumEvenMinusSumOddIndexed = 0;
+        int sumEvenMinusSumOddIndexed = 0;
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
-                sumEvenMinusSumOddIndexed += (byte) array[i];
+                sumEvenMinusSumOddIndexed += array[i];
             } else {
-                sumEvenMinusSumOddIndexed -= (byte) array[i];
+                sumEvenMinusSumOddIndexed -= array[i];
             }
         }
         System.out.println(sumEvenMinusSumOddIndexed);
         System.out.println();
         System.out.println("4. Sum of Numbers Skipping Every Fourth Element: ");
-        byte sumSkipFourth = 0;
+        int sumSkipFourth = 0;
         for (int i = 0; i < array.length; i++) {
-            sumSkipFourth += (i % 4 == 0) ? 0 : (byte) array[i];
+            sumSkipFourth += (i % 4 == 0) ? 0 : array[i];
         }
         System.out.println(sumSkipFourth);
         System.out.println();
@@ -74,10 +74,10 @@ public class AlternatingCalculations {
         System.out.println(counter);
         System.out.println();
         System.out.println("7. Sum Where Multiples of 3 Are Skipped: ");
-        byte counter2 = 0;
+        int counter2 = 0;
         for (int number : array) {
             if (number % 3 != 0) {
-                counter2 += (byte) number;
+                counter2 += number;
             }
         }
         System.out.println(counter2);
@@ -94,8 +94,8 @@ public class AlternatingCalculations {
         System.out.println(counter3);
         System.out.println();
         System.out.println("9. Count of Even and Odd Numbers: ");
-        byte evenCount = 0;
-        byte oddCount = 0;
+        int evenCount = 0;
+        int oddCount = 0;
         for (int number : array) {
             if (number % 2 == 0) {
                 evenCount++;
@@ -107,10 +107,10 @@ public class AlternatingCalculations {
         System.out.println("Odd count: " + oddCount);
         System.out.println();
         System.out.println("10. Sum Where Negative Numbers Are Ignored: ");
-        byte counter4 = 0;
+        int counter4 = 0;
         for (int number : array) {
             if (number > 0) {
-                counter4 += (byte) number;
+                counter4 += number;
             }
         }
         System.out.println(counter4);
@@ -119,11 +119,11 @@ public class AlternatingCalculations {
         int positiveCounter = 1;
         int negativeCounter = 1;
         double finalResult = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < 0) {
-                negativeCounter *= array[i];
+        for (int number : array) {
+            if (number < 0) {
+                negativeCounter *= number;
             } else {
-                positiveCounter *= array[i];
+                positiveCounter *= number;
             }
         }
         finalResult = (double) positiveCounter / negativeCounter;
