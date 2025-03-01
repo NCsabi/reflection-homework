@@ -1,4 +1,4 @@
-package schoolProjects;
+package class_tasks;
 
 import java.util.Scanner;
 

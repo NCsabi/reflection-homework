@@ -7,12 +7,12 @@ public class AlternatingCalculations {
         int[] array = {3, 5, 7, 2, 6, -2, 1, 8, 1, 4};
 
         System.out.println("1. Alternating Sum with Stepwise Subtraction: ");
-        byte stepwiseSum = 0;
+        int stepwiseSum = 0;
         for (int i = 0; i < array.length; i++) {
             if ((i + 1) % 3 == 0) {
-                stepwiseSum -= (byte) array[i];
+                stepwiseSum -= array[i];
             } else {
-                stepwiseSum += (byte) array[i];
+                stepwiseSum += array[i];
             }
         }
         System.out.println(stepwiseSum);
