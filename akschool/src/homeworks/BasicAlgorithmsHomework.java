@@ -1,3 +1,5 @@
+package homeworks;
+
 public class BasicAlgorithmsHomework {
     public static void main(String[] args) {
         int[] array = {3, 100, 7, 1, -51, 4, 101, 73};

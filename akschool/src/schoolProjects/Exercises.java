@@ -1,3 +1,5 @@
+package schoolProjects;
+
 import java.util.Scanner;
 
 public class Exercises {
@@ -17,7 +19,7 @@ public class Exercises {
 
         System.out.printf("%30s", "hello"); //30 karakternyi helyet hagy ki a "hello"-szövegnek, a kimaradt helyeket feltölti szóközzel jobbra rendezve.
         System.out.println();
-        System.out.printf("%-30s gjgjtutudhdh %30s", "hello","world"); //a %-30s balra rendez egy stringet, aztán szöveg aztá jobbra rendezett string.
+        System.out.printf("%-30s gjgjtutudhdh %30s", "hello", "world"); //a %-30s balra rendez egy stringet, aztán szöveg aztá jobbra rendezett string.
         System.out.println();
 
         System.out.println("Please enter name and email: ");
@@ -26,14 +28,11 @@ public class Exercises {
 
         String text = "_";
         String divider;
-        if (name.length() > email.length()){
+        if (name.length() > email.length()) {
             divider = text.repeat(name.length() + 2);
-        }else{
+        } else {
             divider = text.repeat(email.length());
         }
-
-
-
 
 
         System.out.println("Enter first number");

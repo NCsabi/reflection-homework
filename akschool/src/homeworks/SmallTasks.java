@@ -1,3 +1,5 @@
+package homeworks;
+
 import java.math.BigDecimal;
 import java.sql.SQLOutput;
 import java.util.Scanner;
@@ -61,31 +63,31 @@ public class SmallTasks {
         System.out.println("Task five: ");
         System.out.println("Please enter an integer: ");
         int integerForUser = sc.nextInt();
-        if(integerForUser>80){
+        if (integerForUser > 80) {
             System.out.println("The number greater than 80");
-        }else if(integerForUser<80){
+        } else if (integerForUser < 80) {
             System.out.println("The number smaller than 80");
-        }else{
+        } else {
             System.out.println("The number and 80 are equals.");
         }
 
         System.out.println("Task six: ");
         System.out.println("Please enter an integer: ");
         int integerForUserAgain = sc.nextInt();
-        if(integerForUserAgain%7 == 0){
+        if (integerForUserAgain % 7 == 0) {
             System.out.println("The number is divisible by 7");
-        }else{
+        } else {
             System.out.println("The number is not divisible by 7");
         }
 
         System.out.println("Task seven: ");
         System.out.println("Please enter a floating-point number: ");
         double fPNumber = sc.nextDouble();
-        if(fPNumber*6>100){
+        if (fPNumber * 6 > 100) {
             System.out.println("The number is greater than 100");
-        }else if(fPNumber*6<100){
+        } else if (fPNumber * 6 < 100) {
             System.out.println("The number is smaller than 100");
-        }else{
+        } else {
             System.out.println("The number is equals 100");
         }
 
@@ -99,9 +101,8 @@ public class SmallTasks {
         System.out.println("Please enter two texts: ");
         String textOne = sc.nextLine();
         String textTwo = sc.nextLine();
-        System.out.println("The two string's length: "+(textOne.length()+textTwo.length())+" character.");
+        System.out.println("The two string's length: " + (textOne.length() + textTwo.length()) + " character.");
 
         System.out.println("Task ten: ");
-        
     }
 }

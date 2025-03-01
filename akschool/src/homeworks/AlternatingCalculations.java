@@ -1,3 +1,5 @@
+package homeworks;
+
 import java.util.Arrays;
 
 public class AlternatingCalculations {
@@ -142,4 +144,3 @@ public class AlternatingCalculations {
         return true;
     }
 }
-

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d8a44fe-ed86-4610-b2ff-01ddf4cc16b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/AlternatingCalculations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/BasicAlgorithmsHomework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/DayOfTheWeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/FirstLoopHomework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/FizzBuzzExercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/LoopsBasicTask2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/LoopsBasicTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/NameCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/PlaneFigures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/homeworks/SmallTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akschool/src/schoolProjects/Exercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DayOfTheWeek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NameCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlaneFigures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmallTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/arrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/homeWork_2025_02_16.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/src/FirstLoopHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/src/FizzBuzzExercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_16/src/LoopsBasicTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/homeWork_2025_02_23.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../akschool/akschool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/src/AlternatingCalculations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/src/BasicAlgorithmsHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeWork_2025_02_23/src/LoopsBasicTask2.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2snp3taZWaaryad3I1CyqngcyDA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DayOfTheWeek.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercises.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NameCard.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PlaneFigures.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SmallTasks.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/reflection/Intro&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/work/reflection/Intro/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d8a44fe-ed86-4610-b2ff-01ddf4cc16b5" name="Changes" comment="" />
+      <created>1739100999748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739100999748</updated>
+    </task>
+    <servers />
+  </component>
+</project>

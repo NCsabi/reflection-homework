@@ -1,3 +1,5 @@
+package homeworks;
+
 import java.util.Scanner;
 
 public class LoopsBasicTasks {
@@ -80,7 +82,7 @@ public class LoopsBasicTasks {
         }
         System.out.println();
 
-        
+
         System.out.println("Loop twelve: ");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number: ");

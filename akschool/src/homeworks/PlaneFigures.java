@@ -1,4 +1,4 @@
-
+package homeworks;
 
 public class PlaneFigures {
 
@@ -26,20 +26,18 @@ public class PlaneFigures {
         System.out.println(formatedTrapeze);
 
         String formatedDiamond = String.format("%4s\n%6s\n%7s\n%6s\n%4s\n",
-                "*".repeat(1),"*".repeat(5), "*".repeat(7), "*".repeat(5), "*".repeat(1));
+                "*".repeat(1), "*".repeat(5), "*".repeat(7), "*".repeat(5), "*".repeat(1));
         System.out.println("Print diamond: ");
         System.out.println(formatedDiamond);
 
         String formatedDeltoid = String.format("%5s\n%7s\n%1s\n%8s\n%6s\n%5s"
-                , "*".repeat(1),"*".repeat(5),"*".repeat(9), "*".repeat(7), "*".repeat(3),"*".repeat(1));
+                , "*".repeat(1), "*".repeat(5), "*".repeat(9), "*".repeat(7), "*".repeat(3), "*".repeat(1));
         System.out.println("Print deltoid: ");
         System.out.println(formatedDeltoid);
 
         String formatedTriangle = String.format("%5s\n%6s\n%7s\n%8s\n%9s"
-                , "*".repeat(1), "*".repeat(3), "*".repeat(5),"*".repeat(7),"*".repeat(9));
+                , "*".repeat(1), "*".repeat(3), "*".repeat(5), "*".repeat(7), "*".repeat(9));
         System.out.println("Print triangle: ");
         System.out.println(formatedTriangle);
-
-
     }
 }
