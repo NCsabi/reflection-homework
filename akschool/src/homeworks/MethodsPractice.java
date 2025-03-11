@@ -19,34 +19,34 @@ public class MethodsPractice {
         System.out.println("\n");
         System.out.println("5 Write a method that gets in a number as an input parameter and writes all numbers that are divisible by 5 from 1 up to that number: ");
         printNumbersDivisibleByFive(200);
-        System.out.println();
+        System.out.println("\n");
         System.out.println("6 Write a method that gets in a number and returns whether that number is a prime number: ");
-        System.out.println("The number is a prime: " + isCheckPrime(7));
+        System.out.println("The number is a prime: " + isCheckPrime(2));
         System.out.println();
         System.out.println("7 Write a method that gets in two numbers and returns whether the first is divisible by the second one: ");
         checkDivisibility(10, 5);
         System.out.println();
         System.out.println("8 Write a method that gets in three numbers and returns whether the product of the first and second numbers is equal to the third one: ");
-        checkProductEquality(6, 6, 36);
+        System.out.println(checkProductEquality(6, 6, 36));
         System.out.println();
         System.out.println("9 Write a method that gets in a number (n) and writes the first n cubic numbers to the console: ");
         printCubicNumbers(5);
-        System.out.println();
+        System.out.println("\n");
         System.out.println("10 Write a method that gets in a number (n) and writes the cubic numbers to the console up to that number: ");
         printCubesUpToN(64);
-        System.out.println();
+        System.out.println("\n");
         System.out.println("11 Write a method that gets in an array and a number and returns whether the sum of any two numbers at different indexes can add up to that number: ");
         int[] numbers = {2, 11, 7, 15};
         System.out.println("The sum of numbers at different indexes is equal to the requested number is: " + isSumOfTwoNumbers(numbers, 9));
         System.out.println();
         System.out.println("12 Write a method that gets in a String and a positive number and returns the String repeated n times. " +
                 "If the number is smaller than 1, return an empty String. Don’t use the string’s in-built repeat method!");
-        repeatStringNTimes("text", 7);
+        System.out.println(repeatStringNTimes("text ", 7));
         System.out.println();
         System.out.println("13 Write a method that gets in an array of Strings and concatenates them into one String: ");
         String[] words = {"It ", "is ", "a ", "good ", "day ", "to ", "learn ", "Java!"};
         System.out.print(concatenateStrings(words));
-        System.out.println();
+        System.out.println("\n");
         System.out.println("14 Write a method that gets in a two-dimensional array and returns the sum of all of the numbers: ");
         int[][] matrix = {
                 {1, 44, 66, 88},
@@ -102,18 +102,17 @@ public class MethodsPractice {
     }
 
     public static boolean isCheckPrime(int num) {
-        boolean isPrime = true;
+
         if (num <= 1) {
-            isPrime = false;
+            return false;
         } else {
             for (int i = 2; i <= Math.sqrt(num); i++) {
                 if (num % i == 0) {
-                    isPrime = false;
-                    break;
+                    return false;
                 }
             }
         }
-        return isPrime;
+        return true;
     }
 
     public static void checkDivisibility(int num1, int num2) {
@@ -124,12 +123,8 @@ public class MethodsPractice {
         }
     }
 
-    public static void checkProductEquality(int num1, int num2, int num3) {
-        if ((num1 * num2) == num3) {
-            System.out.println("The product of the first two numbers is equal to the sum of the third number");
-        } else {
-            System.out.println("The product of the first two numbers is not equal to the sum of the third number");
-        }
+    public static boolean checkProductEquality(int num1, int num2, int num3) {
+        return (num1 * num2) == num3;
     }
 
     public static void printCubicNumbers(int n) {
@@ -155,14 +150,15 @@ public class MethodsPractice {
         return false;
     }
 
-    public static void repeatStringNTimes(String text, int number) {
+    public static String repeatStringNTimes(String text, int number) {
         if (number < 1) {
-            System.out.println("");
-        } else {
-            for (int i = 0; i < number; i++) {
-                System.out.print(text + " ");
-            }
+            return "";
         }
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < number; i++) {
+            result.append(text);
+        }
+        return result.toString();
     }
 
     public static String concatenateStrings(String[] words) {
@@ -196,10 +192,8 @@ public class MethodsPractice {
     public static int calculateMainDiagonalSum(int[][] matrix) {
         int sum = 0;
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (i == j) {
-                    sum += matrix[i][j];
-                }
+            if (i < matrix[i].length) {
+                sum += matrix[i][i];
             }
         }
         return sum;
@@ -209,10 +203,9 @@ public class MethodsPractice {
         int sum = 0;
         int diagonalSum = calculateMainDiagonalSum(matrix);
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (i + j == matrix.length - 1) {
-                    sum += matrix[i][j];
-                }
+            int column = matrix.length - 1 - i;
+            if (column < matrix[i].length) {
+                sum += matrix[i][column];
             }
         }
         return diagonalSum - sum;
