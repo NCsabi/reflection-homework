@@ -11,7 +11,7 @@ public class TipCalculator {
         System.out.println("Amount of tip: " + calculateTip(prices, number));
     }
 
-    public static int checksTheRange(int num) {
+    public static int checkRange(int num) {
         return (num < 10 || num > 80) ? -1 : num;
     }
 
@@ -24,10 +24,10 @@ public class TipCalculator {
     }
 
     public static int calculateTip(int[] prices, int tip) {
-        if (checksTheRange(tip) == -1) {
+        if (checkRange(tip) == -1) {
             return -1;
         } else {
-            return addPrices(prices) * checksTheRange(tip) / 100;
+            return addPrices(prices) * checkRange(tip) / 100;
         }
     }
 }

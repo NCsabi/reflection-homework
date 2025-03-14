@@ -8,21 +8,21 @@ public class TipCalculatorTest {
     @Test
     void testTipPercentageBelowMinimum() {
         int number = 9;
-        int result = TipCalculator.checksTheRange(number);
+        int result = TipCalculator.checkRange(number);
         Assertions.assertEquals(-1, result);
     }
 
     @Test
     void testTipPercentageUpperMaximum() {
         int number = 81;
-        int result = TipCalculator.checksTheRange(number);
+        int result = TipCalculator.checkRange(number);
         Assertions.assertEquals(-1, result);
     }
 
     @Test
     void testTipPercentageBetweenMinimumAndMaximum() {
         int number = 45;
-        int result = TipCalculator.checksTheRange(number);
+        int result = TipCalculator.checkRange(number);
         Assertions.assertEquals(45, result);
     }
 
