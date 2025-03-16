@@ -9,7 +9,7 @@ public class PrimeLister {
         listPrimesUpToUserInput(number);
     }
 
-    public static int listPrimesUpToUserInput(int validNumber) {
+    public static void listPrimesUpToUserInput(int validNumber) {
         for (int i = 1; i <= validNumber; i++) {
             boolean prime = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
@@ -22,7 +22,6 @@ public class PrimeLister {
                 System.out.print(i + " ");
             }
         }
-        return validNumber;
     }
 
     public static int getNumberFromUser(Scanner scanner) {
