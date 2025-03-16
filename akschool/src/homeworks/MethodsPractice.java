@@ -102,7 +102,6 @@ public class MethodsPractice {
     }
 
     public static boolean isCheckPrime(int num) {
-
         if (num <= 1) {
             return false;
         } else {
@@ -159,6 +158,7 @@ public class MethodsPractice {
             result.append(text);
         }
         return result.toString();
+        //vagy ami hatékonyabb, a 155-160 sor helyett: return String.valueOf(text).repeat(number);
     }
 
     public static String concatenateStrings(String[] words) {
