@@ -6,11 +6,21 @@ public class PrimeLister {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = getNumberFromUser(scanner);
-        listPrimesUpToUserInput(number);
+        int[] selectedNumbers = extractPrimesToArray(number);
+        listPrimesUpToUserInput(selectedNumbers);
+
     }
 
-    public static void listPrimesUpToUserInput(int validNumber) {
-        for (int i = 1; i <= validNumber; i++) {
+    public static void listPrimesUpToUserInput(int[] array) {
+        for (int j : array) {
+            System.out.print(j + " ");
+        }
+    }
+
+    public static int[] extractPrimesToArray(int validNumber) {
+        int[] primes = new int[countingPrimes(validNumber)];
+        int index = 0;
+        for (int i = 2; i <= validNumber; i++) {
             boolean prime = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
@@ -19,9 +29,28 @@ public class PrimeLister {
                 }
             }
             if (prime) {
-                System.out.print(i + " ");
+                primes[index] = i;
+                index++;
             }
         }
+        return primes;
+    }
+
+    public static int countingPrimes(int validNumber) {
+        int primeCount = 0;
+        for (int i = 2; i <= validNumber; i++) {
+            boolean prime = true;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime) {
+                primeCount++;
+            }
+        }
+        return primeCount;
     }
 
     public static int getNumberFromUser(Scanner scanner) {
