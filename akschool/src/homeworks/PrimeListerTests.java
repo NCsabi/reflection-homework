@@ -11,7 +11,6 @@ public class PrimeListerTests {
     void testCountingPrimes(int number, int expected) {
         int result = PrimeLister.countingPrimes(number);
         Assertions.assertEquals(expected, result);
-
     }
 
     @Test
