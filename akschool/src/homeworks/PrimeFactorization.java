@@ -9,18 +9,18 @@ public class PrimeFactorization {
         System.out.println(primeFactorization(number));
     }
 
-    public static List<Boolean> isInitializeBooleanList(int number) {
-        List<Boolean> isPrim = new ArrayList<>();
-        isPrim.add(false);
-        isPrim.add(false);
+    public static List<Boolean> initializeBooleanList(int number) {
+        List<Boolean> primeFlags = new ArrayList<>();
+        primeFlags.add(false);
+        primeFlags.add(false);
         for (int i = 2; i < number; i++) {
-            isPrim.add(true);
+            primeFlags.add(true);
         }
-        return isPrim;
+        return primeFlags;
     }
 
     public static List<Boolean> isSievePrimeFlags(int number) {
-        List<Boolean> isPrimes = isInitializeBooleanList(number);
+        List<Boolean> isPrimes = initializeBooleanList(number);
         for (int i = 2; i < isPrimes.size(); i++) {
             if (isPrimes.get(i)) {
                 for (int j = i * i; j < isPrimes.size(); j += i) {
@@ -45,11 +45,12 @@ public class PrimeFactorization {
     public static List<Integer> primeFactorization(int number) {
         List<Integer> primes = generatePrimeList(number);
         List<Integer> primeFactors = new ArrayList<>();
-        for (int prime : primes)
+        for (int prime : primes) {
             while (number % prime == 0) {
                 primeFactors.add(prime);
                 number /= prime;
             }
+        }
         return primeFactors;
     }
 }

@@ -11,7 +11,7 @@ public class PrimeFactorizationTests {
     @CsvSource({"0, false", "1, false", "2,true", "3,true"})
     void shouldInitializeBooleanListCorrectly(int number, boolean expected) {
         int num = 28;
-        List<Boolean> result = PrimeFactorization.isInitializeBooleanList(num);
+        List<Boolean> result = PrimeFactorization.initializeBooleanList(num);
         Assertions.assertEquals(expected, result.get(number));
     }
 
