@@ -42,7 +42,7 @@ public class AlternatingCalculations {
         System.out.println("4. Sum of Numbers Skipping Every Fourth Element: ");
         int sumSkipFourth = 0;
         for (int i = 0; i < array.length; i++) {
-            sumSkipFourth += (i % 4 == 0) ? 0 : array[i];
+            sumSkipFourth += (i % 3 == 0) ? 0 : array[i];
         }
         System.out.println(sumSkipFourth);
         System.out.println();
