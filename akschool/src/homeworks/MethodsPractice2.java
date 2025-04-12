@@ -53,7 +53,7 @@ public class MethodsPractice2 {
     //c. So if someone earns 100 000 HUF gross per month, their net salary is going to be 66500 HUF
     //d. Use separate methods to calculate SZJA and TBJ.
     public static double calculateNetSalary(int salary) {
-        return (int) (salary - calculatePersonalIncomeTax(salary) - calculateTbjRate(salary));
+        return salary - calculatePersonalIncomeTax(salary) - calculateTbjRate(salary);
     }
 
     //12, Write a method that gets in an array of Strings and returns a new array of numbers of each String’s length

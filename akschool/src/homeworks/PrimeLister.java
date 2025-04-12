@@ -8,7 +8,7 @@ public class PrimeLister {
         int number = getNumberFromUser(scanner);
         int[] selectedNumbers = extractPrimesToArray(number);
         listPrimesUpToUserInput(selectedNumbers);
-        System.out.println("Primek: " + countingPrimes(number));
+        System.out.println("Primes: " + countingPrimes(number));
     }
 
     public static void listPrimesUpToUserInput(int[] array) {
