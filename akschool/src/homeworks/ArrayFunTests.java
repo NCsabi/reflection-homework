@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class ArrayFunTests {
     @Test
     void testCalculateEvenAverage() {
-        double expected = 8.5;
+        double expected = 6.8;
         Assertions.assertEquals(expected, ArrayFun.calculateEvenAverage(10, 6, 9, 4, 55, 73, 14, 0));
     }
 

@@ -13,8 +13,8 @@ public class ArrayFun {
         System.out.println(containsConsecutiveDuplicates(numbers));
         String[][] texts = {
                 {"one", "two", "three"},
-                {"four", "five", "six"},
-                {"seven", "eight", "nine"}
+                {"four", "five"},
+                {"six", "seven", "eight", "nine"}
         };
         System.out.println(getTotalVowels(texts));
         System.out.println(sumOfLongestString(texts));
@@ -39,30 +39,26 @@ public class ArrayFun {
     //9, Write a method in which you return a new 2D array of booleans where each element
     // is true if the corresponding string contains a digit.
     public static boolean[][] isDigitInStrings2D(String[][] texts) {
-        boolean[][] isNumber = new boolean[texts.length][texts[0].length];
         boolean containsDigit = false;
-        for (int i = 0; i < texts.length; i++) {
-            for (int j = 0; j < texts[i].length; j++) {
-                String word = texts[i][j];
+        for (String[] text : texts) {
+            for (String word : text) {
                 for (char character : word.toCharArray()) {
                     if (Character.isDigit(character)) {
                         containsDigit = true;
                         break;
                     }
                 }
-                if (containsDigit) {
+                if (containsDigit)
                     break;
-                }
             }
-            if (containsDigit) {
+            if (containsDigit)
                 break;
-            }
         }
-        if (containsDigit) {
-            for (int i = 0; i < isNumber.length; i++) {
-                for (int j = 0; j < isNumber[i].length; j++) {
-                    isNumber[i][j] = true;
-                }
+        boolean[][] isNumber = new boolean[texts.length][];
+        for (int i = 0; i < texts.length; i++) {
+            isNumber[i] = new boolean[texts[i].length];
+            if (containsDigit) {
+                Arrays.fill(isNumber[i], true);
             }
         }
         return isNumber;
@@ -119,14 +115,12 @@ public class ArrayFun {
 
     //5, Write a method in which you return true if the array of integers contains any consecutive duplicates.
     public static boolean containsConsecutiveDuplicates(int... numbers) {
-        boolean hasDuplicates = false;
         for (int i = 0; i < numbers.length - 1; i++) {
             if (numbers[i] == numbers[i + 1]) {
-                hasDuplicates = true;
-                break;
+                return true;
             }
         }
-        return hasDuplicates;
+        return false;
     }
 
     //4, Write a method in which you return the concatenation of all strings that are longer than 3 characters.
@@ -153,15 +147,15 @@ public class ArrayFun {
     //2, Write a method in which you return a new array with each number squared only if the original
     // number was odd. If the original number was even, skip it from the new array.
     public static int[] squareOdds(int... array) {
-        int[] squaredNumbers = new int[countNegativeNumbers(array)];
+        int[] squaredOddNumbers = new int[countOddNumbers(array)];
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
                 array[i] = (int) Math.pow(array[i], 2);
-                squaredNumbers[index++] = array[i];
+                squaredOddNumbers[index++] = array[i];
             }
         }
-        return squaredNumbers;
+        return squaredOddNumbers;
     }
 
     //1, Write a method in which you Return the average of all even numbers in an array of integers.
@@ -169,7 +163,7 @@ public class ArrayFun {
         int sum = 0;
         int counter = 0;
         for (int number : array) {
-            if (number % 2 == 0 && number != 0) {
+            if (number % 2 == 0) {
                 sum += number;
                 counter++;
             }
@@ -177,7 +171,7 @@ public class ArrayFun {
         return (double) sum / counter;
     }
 
-    public static int countNegativeNumbers(int[] array) {
+    public static int countOddNumbers(int[] array) {
         int counter = 0;
         for (int number : array) {
             if (number % 2 != 0) {
