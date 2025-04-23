@@ -21,20 +21,26 @@ public class ArrayFun3D {
         System.out.println(concatenateLongStrings(words));
         System.out.println(findLongestStringLength(words));
         System.out.println(checkSEndingInNestedArrays(words));
+
     }
 
     //5, Write a method in which you return true if every subarray (3rd level) contains at least one string that ends with "s".
     public static boolean checkSEndingInNestedArrays(String[][][] words) {
         for (String[][] array2D : words) {
             for (String[] array : array2D) {
+                boolean includedS = false;
                 for (String text : array) {
                     if (text.charAt(text.length() - 1) == 's') {
-                        return true;
+                        includedS = true;
+                        break;
                     }
+                }
+                if(!includedS) {
+                    return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 
     //4, Write a method in which you return the maximum length of a string in the entire 3D array.
@@ -69,16 +75,14 @@ public class ArrayFun3D {
 
     //2, Write a method in which you return a 1D array of integers representing the number of strings in each sub-subarray (3rd level).
     public static int[] deepStringCounter(String[][][] words) {
-        int[] stringCounter = new int[stringCounter(words)];
+        int[] subArrays = new int[arrayCounter(words)];
         int index = 0;
         for (String[][] array2D : words) {
             for (String[] array : array2D) {
-                for (String text : array) {
-                    stringCounter[index++] = text.length();
-                }
+                subArrays[index++] = array.length;
             }
         }
-        return stringCounter;
+        return subArrays;
     }
 
     //1, Write a method in which you return the number of strings that are palindromes.
@@ -97,17 +101,14 @@ public class ArrayFun3D {
     }
 
     public static boolean isPalindrome(String word) {
-        String text = new StringBuilder(word).reverse().toString();
-        return text.equals(word);
+        return new StringBuilder(word).reverse().toString().equals(word);
     }
 
-    public static int stringCounter(String[][][] words) {
+    public static int arrayCounter(String[][][] words) {
         int counter = 0;
         for (String[][] array2D : words) {
             for (String[] array : array2D) {
-                for (String text : array) {
-                    counter++;
-                }
+                counter++;
             }
         }
         return counter;

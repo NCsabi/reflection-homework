@@ -35,7 +35,7 @@ public class ArrayFun3DTests {
                         {"brick", "e", "plane"}
                 }
         };
-        int[] expected = {5, 6, 4, 5, 4, 5, 6, 10, 10, 7, 5, 5, 8, 5, 5, 5, 1, 5};
+        int[] expected = {3, 3, 3, 3, 3, 3};
         Assertions.assertArrayEquals(expected, ArrayFun3D.deepStringCounter(words));
     }
 
@@ -95,14 +95,14 @@ public class ArrayFun3DTests {
     void testCheckSEndingInNestedArraysTrue() {
         String[][][] words = {
                 {
-                        {"apple", "banana", "pear"},
+                        {"apple", "bananas", "pear"},
                         {"lemons", "kiwi", "mango"},
-                        {"orange", "strawberry", "watermelon"}
+                        {"orange", "strawberrys", "watermelon"}
                 },
                 {
-                        {"rotator", "level", "radar"},
-                        {"building", "madam", "money"},
-                        {"brick", "e", "plane"}
+                        {"rotators", "level", "radar"},
+                        {"building", "madams", "money"},
+                        {"brick", "es", "plane"}
                 }
         };
         Assertions.assertTrue(ArrayFun3D.checkSEndingInNestedArrays(words));
