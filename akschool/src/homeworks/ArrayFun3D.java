@@ -35,7 +35,7 @@ public class ArrayFun3D {
                         break;
                     }
                 }
-                if(!includedS) {
+                if (!includedS) {
                     return false;
                 }
             }
