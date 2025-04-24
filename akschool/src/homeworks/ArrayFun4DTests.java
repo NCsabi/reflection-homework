@@ -116,8 +116,8 @@ public class ArrayFun4DTests {
         String[][][][] fourDArray = {
                 {
                         {
-                                {"One", "Two"},
-                                {"Three", "Four"}
+                                {"aaaaaaaaa", "ee"},
+                                {"ooo", "oue"}
                         },
                         {
                                 {"five", "six"},
@@ -135,7 +135,7 @@ public class ArrayFun4DTests {
                         }
                 }
         };
-        List<String> expected = new ArrayList<>(List.of("ELEVEN", "Thirteen", "Fourteen", "Fifteen", "Sixteen"));
+        List<String> expected = new ArrayList<>(List.of("aaaaaaaaa", "ooo", "oue", "ELEVEN", "Thirteen", "Fourteen", "Fifteen", "Sixteen"));
         Assertions.assertEquals(expected, ArrayFun4D.filterByVowelCount(fourDArray));
     }
 

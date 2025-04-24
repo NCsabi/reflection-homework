@@ -78,9 +78,9 @@ public class ArrayFun4D {
     }
 
     //3, Write a method in which you return the average length of all strings, rounded down to the nearest integer.
-    public static int calculateAverageStringLength(String[][][][] fourDArray) {
-        int totalLength = 0;
-        int count = 0;
+    public static double calculateAverageStringLength(String[][][][] fourDArray) {
+        double totalLength = 0;
+        double count = 0;
         for (String[][][] threeDArray : fourDArray) {
             for (String[][] twoDArray : threeDArray) {
                 for (String[] oneDArray : twoDArray) {
@@ -91,7 +91,7 @@ public class ArrayFun4D {
                 }
             }
         }
-        return (int) Math.floor((double) totalLength / count);
+        return Math.floor(totalLength / count);
     }
 
     //2, Write a method in which you return a new 4D array with the same structure, where each string is reversed.
