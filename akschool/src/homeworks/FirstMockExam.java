@@ -20,7 +20,7 @@ public class FirstMockExam {
                 }
         };
         System.out.println(countFalseElements(threeDArray));
-        long[] numbers = {1, 2, 3, 4};
+        long[] numbers = {1, 2, 3, 4, 5, 6, 7};
         System.out.println(calculateAlternatingSum(numbers));
         System.out.println(getUserInput(scanner));
         System.out.println(Arrays.toString(generateFibonacciNumber(getUserInput(scanner))));
@@ -34,13 +34,11 @@ public class FirstMockExam {
     public static long calculateAlternatingSum(long[] numbers) {
         long value = 0;
         for (int i = 0; i < numbers.length; i++) {
-            long temp;
+            long temp = 0;
             if (i % 3 == 0) {
                 temp = numbers[i] *= -1;
-            } else if ((i + 1) % 2 == 0) {
+            } else if (i % 3 == 1) {
                 temp = numbers[i];
-            } else {
-                temp = 0;
             }
             value += temp;
         }
@@ -77,13 +75,13 @@ public class FirstMockExam {
     // First task
     public static double calculatePowerDifference(Scanner scanner) {
         int[] numbers = new int[6];
-        double counter = 0;
+        int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Enter the " + (i + 1) + " number: ");
             numbers[i] = scanner.nextInt();
-            counter += numbers[i];
+            sum += numbers[i];
         }
-        double average = counter / numbers.length;
+        double average = (double) sum / numbers.length;
         return Math.pow(findLargestNumber(numbers), findSmallestNumber(numbers)) - average;
     }
 
