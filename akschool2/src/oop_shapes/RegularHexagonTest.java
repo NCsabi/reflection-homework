@@ -16,6 +16,6 @@ public class RegularHexagonTest {
     void testCalculateArea() {
         RegularHexagon hexagon = new RegularHexagon();
         hexagon.setSide(5);
-        Assertions.assertEquals(64.9519052838329, hexagon.calculateArea(), 0.001);
+        Assertions.assertEquals(64.951, hexagon.calculateArea(), 0.001);
     }
 }

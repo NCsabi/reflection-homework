@@ -20,6 +20,6 @@ public class TriangleTest {
         triangle.setA(5);
         triangle.setB(4);
         triangle.setC(6);
-        Assertions.assertEquals(9.921567416492215, triangle.calculateArea(), 0.001);
+        Assertions.assertEquals(9.921, triangle.calculateArea(), 0.001);
     }
 }
