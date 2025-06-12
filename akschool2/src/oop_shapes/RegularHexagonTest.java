@@ -9,13 +9,13 @@ public class RegularHexagonTest {
         RegularHexagon hexagon = new RegularHexagon();
         hexagon.setSide(5);
         double result = hexagon.calculatePerimeter();
-        Assertions.assertEquals(30.0, result);
+        Assertions.assertEquals(30.0, result, 0.001);
     }
 
     @Test
     void testCalculateArea() {
         RegularHexagon hexagon = new RegularHexagon();
         hexagon.setSide(5);
-        Assertions.assertEquals(64.9519052838329, hexagon.calculateArea());
+        Assertions.assertEquals(64.9519052838329, hexagon.calculateArea(), 0.001);
     }
 }

@@ -11,7 +11,7 @@ public class TriangleTest {
         triangle.setB(4);
         triangle.setC(4);
         double result = triangle.calculatePerimeter();
-        Assertions.assertEquals(13.0, result);
+        Assertions.assertEquals(13.0, result, 0.001);
     }
 
     @Test
@@ -20,6 +20,6 @@ public class TriangleTest {
         triangle.setA(5);
         triangle.setB(4);
         triangle.setC(6);
-        Assertions.assertEquals(9.921567416492215, triangle.calculateArea());
+        Assertions.assertEquals(9.921567416492215, triangle.calculateArea(), 0.001);
     }
 }

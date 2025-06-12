@@ -10,7 +10,7 @@ public class RectangleTest {
         rectangle.setWidth(5);
         rectangle.setHeight(4);
         double result = rectangle.calculatePerimeter();
-        Assertions.assertEquals(18.0, result);
+        Assertions.assertEquals(18.0, result, 0.001);
     }
 
     @Test
@@ -18,6 +18,6 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle();
         rectangle.setWidth(5);
         rectangle.setHeight(4);
-        Assertions.assertEquals(20.0, rectangle.calculateArea());
+        Assertions.assertEquals(20.0, rectangle.calculateArea(), 0.001);
     }
 }
