@@ -11,11 +11,12 @@ public class Chef extends Person {
 
     @Override
     public void introduce() {
-        System.out.println("Hi, my name is " + getName() + ". I am " + getAge() + ". I am " + getGender() + " and a chef.");
+        System.out.printf("Hi, my name is %s. I am %d. I am %s and a chef.%n",
+                getName(), getAge(), getGender());
         ;
     }
 
     public String cook(String food) {
-        return getName() + " has cooked some" + food + ".";
+        return String.format("%s has cooked some %s.", getName(), food);
     }
 }
