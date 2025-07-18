@@ -16,6 +16,6 @@ public class CircleTest {
     void testCalculateArea() {
         Circle circle = new Circle();
         circle.setRadius(5);
-        Assertions.assertEquals(78.539, circle.calculateArea(),0.001);
+        Assertions.assertEquals(78.539, circle.calculateArea(), 0.001);
     }
 }
