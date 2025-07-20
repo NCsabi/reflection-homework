@@ -13,9 +13,9 @@ public class ReversedWordsTaskTest {
         List<String> input = Arrays.asList("one", "two", "three");
         List<String> expected = Arrays.asList("eno", "owt", "eerht");
 
-        List<String> actual = ReversedWordsTask.reverseWords(input);
+        List<String> result = ReversedWordsTask.reverseWords(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -23,9 +23,9 @@ public class ReversedWordsTaskTest {
         List<String> input = List.of();
         List<String> expected = List.of();
 
-        List<String> actual = ReversedWordsTask.reverseWords(input);
+        List<String> result = ReversedWordsTask.reverseWords(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -33,9 +33,9 @@ public class ReversedWordsTaskTest {
         List<String> input = Arrays.asList("c", "f", "r");
         List<String> expected = Arrays.asList("c", "f", "r");
 
-        List<String> actual = ReversedWordsTask.reverseWords(input);
+        List<String> result = ReversedWordsTask.reverseWords(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -43,8 +43,8 @@ public class ReversedWordsTaskTest {
         List<String> input = Arrays.asList("madam", "level");
         List<String> expected = Arrays.asList("madam", "level");
 
-        List<String> actual = ReversedWordsTask.reverseWords(input);
+        List<String> result = ReversedWordsTask.reverseWords(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 }

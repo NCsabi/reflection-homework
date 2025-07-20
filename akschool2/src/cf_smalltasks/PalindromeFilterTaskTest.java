@@ -13,9 +13,9 @@ public class PalindromeFilterTaskTest {
         List<String> input = Arrays.asList("noon", "bird", "radar", "racecar", "table");
         List<String> expected = Arrays.asList("noon", "radar", "racecar");
 
-        List<String> actual = PalindromeFilterTask.filterPalindromes(input);
+        List<String> result = PalindromeFilterTask.filterPalindromes(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -23,9 +23,9 @@ public class PalindromeFilterTaskTest {
         List<String> input = Arrays.asList("level", "noon", "madam");
         List<String> expected = Arrays.asList("level", "noon", "madam");
 
-        List<String> actual = PalindromeFilterTask.filterPalindromes(input);
+        List<String> result = PalindromeFilterTask.filterPalindromes(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -33,9 +33,9 @@ public class PalindromeFilterTaskTest {
         List<String> input = List.of("bird", "building", "door");
         List<String> expected = List.of();
 
-        List<String> actual = PalindromeFilterTask.filterPalindromes(input);
+        List<String> result = PalindromeFilterTask.filterPalindromes(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -43,8 +43,8 @@ public class PalindromeFilterTaskTest {
         List<String> input = List.of();
         List<String> expected = List.of();
 
-        List<String> actual = PalindromeFilterTask.filterPalindromes(input);
+        List<String> result = PalindromeFilterTask.filterPalindromes(input);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 }

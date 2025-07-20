@@ -6,6 +6,7 @@ import java.util.List;
 public class ReversedWordsTask {
     public static void main(String[] args) {
         List<String> words = List.of("one", "two", "three", "four", "five", "six");
+        System.out.println(reverseWords(words));
 
     }
 

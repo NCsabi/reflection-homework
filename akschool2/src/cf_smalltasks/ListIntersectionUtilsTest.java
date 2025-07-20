@@ -14,9 +14,9 @@ public class ListIntersectionUtilsTest {
         List<Integer> list2 = List.of(5, 6, 7, 8, 9);
 
         List<Integer> expected = Arrays.asList(6, 8);
-        List<Integer> actual = ListIntersectionUtils.getIntersection(list1, list2);
+        List<Integer> result = ListIntersectionUtils.getIntersection(list1, list2);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -25,8 +25,8 @@ public class ListIntersectionUtilsTest {
         List<Integer> list2 = Arrays.asList(5, 6, 7, 8);
 
         List<Integer> expected = List.of();
-        List<Integer> actual = ListIntersectionUtils.getIntersection(list1, list2);
+        List<Integer> result = ListIntersectionUtils.getIntersection(list1, list2);
 
-        assertEquals(expected, actual);
+        assertEquals(expected, result);
     }
 }
