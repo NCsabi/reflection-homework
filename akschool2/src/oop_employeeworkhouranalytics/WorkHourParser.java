@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class WorkHourParser {
-    public List<oop_employeeworkhouranalytics.Employee> parseCsv(String filePath) {
-        List<oop_employeeworkhouranalytics.Employee> employees = new ArrayList<>();
+    public List<Employee> parseCsv(String filePath) {
+        List<Employee> employees = new ArrayList<>();
         try {
             List<String> lines = Files.readAllLines(Path.of(filePath));
             for (int i = 1; i < lines.size(); i++) {
@@ -20,7 +20,7 @@ public class WorkHourParser {
                 } else {
                     String name = splitLine[0];
                     String department = splitLine[1];
-                    oop_employeeworkhouranalytics.Employee employee = new oop_employeeworkhouranalytics.Employee(name, department);
+                    Employee employee = new Employee(name, department);
                     for (int j = 2; j < splitLine.length; j++) {
                         int hour = Integer.parseInt(splitLine[j].trim());
                         employee.addDailyHour(hour);

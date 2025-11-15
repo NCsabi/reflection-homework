@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public class EmployeeAnalytics {
-    public static List<Integer> getWeeklyHours(List<oop_employeeworkhouranalytics.Employee> employees) {
+    public static List<Integer> getWeeklyHours(List<Employee> employees) {
         List<Integer> weeklyTotals = new ArrayList<>();
-        for (oop_employeeworkhouranalytics.Employee employee : employees) {
+        for (Employee employee : employees) {
             int totalHours = 0;
             for (int hour : employee.getDailyHours()) {
                 totalHours += hour;
@@ -18,7 +18,7 @@ public class EmployeeAnalytics {
         return weeklyTotals;
     }
 
-    public static List<Double> getAverageHours(List<oop_employeeworkhouranalytics.Employee> employees) {
+    public static List<Double> getAverageHours(List<Employee> employees) {
         List<Double> totalAverages = new ArrayList<>();
         List<Integer> weeklyTotals = getWeeklyHours(employees);
 
@@ -30,11 +30,11 @@ public class EmployeeAnalytics {
         }
         return totalAverages;
     }
-    public static Map<String, Double> getDepartmentAverageHours(List<oop_employeeworkhouranalytics.Employee> employees) {
+    public static Map<String, Double> getDepartmentAverageHours(List<Employee> employees) {
         Map<String, Integer> departmentTotalHours = new HashMap<>();
         Map<String, Integer> departmentEmployeeCount = new HashMap<>();
 
-        for (oop_employeeworkhouranalytics.Employee employee : employees) {
+        for (Employee employee : employees) {
             String department = employee.getDepartment();
             int weeklyHours = 0;
             for (int hour : employee.getDailyHours()) {
