@@ -1,9 +1,9 @@
 package test;
 
-import api.PrimeLister;
-import impl.NaivePrimeLister;
-import impl.SievePrimeLister;
-import impl.SqrtPrimeLister;
+import lister.PrimeLister;
+import lister.NaivePrimeLister;
+import lister.SievePrimeLister;
+import lister.SqrtPrimeLister;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;

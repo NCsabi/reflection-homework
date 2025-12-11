@@ -1,6 +1,4 @@
-package impl;
-
-import api.PrimeLister;
+package lister;
 
 import java.util.ArrayList;
 import java.util.Arrays;
