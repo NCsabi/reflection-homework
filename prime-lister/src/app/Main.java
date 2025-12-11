@@ -11,8 +11,8 @@ public class Main {
         PrimeLister sqrt = new SqrtPrimeLister();
         PrimeLister sieve = new SievePrimeLister();
 
-        System.out.println("Naive: " + naive.generatePrim(1200));
-        System.out.println("Sqrt: " + sqrt.generatePrim(1200));
-        System.out.println("Sieve: " + sieve.generatePrim(1200));
+        System.out.println("Naive: " + naive.generatePrime(1200));
+        System.out.println("Sqrt: " + sqrt.generatePrime(1200));
+        System.out.println("Sieve: " + sieve.generatePrime(1200));
     }
 }

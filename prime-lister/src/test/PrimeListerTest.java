@@ -12,9 +12,9 @@ import java.util.List;
 
 public class PrimeListerTest {
     private void runCommonTests(PrimeLister lister) {
-        assertIterableEquals(List.of(2, 3), lister.generatePrim(3));
-        assertIterableEquals(List.of(2, 3, 5, 7), lister.generatePrim(10));
-        assertIterableEquals(List.of(), lister.generatePrim(1));
+        assertIterableEquals(List.of(2, 3), lister.generatePrime(3));
+        assertIterableEquals(List.of(2, 3, 5, 7), lister.generatePrime(10));
+        assertIterableEquals(List.of(), lister.generatePrime(1));
     }
 
     @Test

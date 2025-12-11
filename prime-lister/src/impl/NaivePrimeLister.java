@@ -7,7 +7,7 @@ import java.util.List;
 
 public class NaivePrimeLister implements PrimeLister {
     @Override
-    public List<Integer> generatePrim(int n) {
+    public List<Integer> generatePrime(int n) {
         List<Integer> primes = new ArrayList<>();
         for (int i = 2; i <= n; i++) {
             boolean isPrime = true;

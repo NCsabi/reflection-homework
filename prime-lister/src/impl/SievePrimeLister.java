@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SievePrimeLister implements PrimeLister {
     @Override
-    public List<Integer> generatePrim(int n) {
+    public List<Integer> generatePrime(int n) {
         boolean[] isPrime = new boolean[n + 1];
         Arrays.fill(isPrime, true);
         isPrime[0] = false;
