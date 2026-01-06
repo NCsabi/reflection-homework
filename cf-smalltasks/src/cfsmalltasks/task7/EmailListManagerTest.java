@@ -1,4 +1,4 @@
-package cf_smalltasks.emaillistmanager;
+package cfsmalltasks.task7;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class EmailListingManagerTest {
+public class EmailListManagerTest {
     private EmailListManager manager;
 
     @BeforeEach

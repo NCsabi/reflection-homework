@@ -1,4 +1,4 @@
-package cf_smalltasks.emaillistmanager;
+package cfsmalltasks.task7;
 
 import java.util.HashSet;
 import java.util.Set;

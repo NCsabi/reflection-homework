@@ -1,4 +1,4 @@
-package cf_smalltasks.emaillistmanager;
+package cfsmalltasks.task7;
 
 import java.util.Scanner;
 
@@ -16,7 +16,6 @@ public class Main {
                     while (counter < 3) {
                         System.out.println("Enter an email address: ");
                         String email = scanner.nextLine();
-                        //nem tudom pontosan hogy az isValidEmail logikát itt vagy a másik osztályban szabályosabb-e megvalósítani...
                         if (!manager.isValidEmail(email)) {
                             System.err.println("Invalid email format. Try again!");
                             counter++;
